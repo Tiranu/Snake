@@ -55,7 +55,7 @@
 
     let firstPart = snake[0];
     let otherParts = snake.slice(1);
-    let duplicatePart = otherParts.find(part => part.x == firstPart.x && part.y == firstPart.y);
+    let duplicatePart = otherParts.find(part => part.x === firstPart.x && part.y === firstPart.y);
 
 
     if (snake[0].x < 0 ||
@@ -73,7 +73,7 @@
     }
 
   }
-
+// Mein Comment
 
   function placeFood() {
     let randomX = Math.floor(Math.random() * cols);
@@ -123,7 +123,7 @@
       snake[0].y--;
     }
 
-    if (direction == 'RUNTER') {
+    if (direction === 'RUNTER') {
       snake[0].y++;
     }
 
